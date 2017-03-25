@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,9 +25,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Team A"
+                android:text="@string/teamAText"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="@color/colorTeamText"
                 android:fontFamily="sans-serif-medium"
                 android:layout_marginBottom="16dp"
                 android:id="@+id/textView" />
@@ -39,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textSize="56sp"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorScoreText"
                 android:fontFamily="sans-serif-light"
                 android:text="0"
                 android:layout_marginBottom="24dp"/>
@@ -48,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="threePointsTeamA"
-                android:text="+3 Points"
+                android:text="@string/threePoint"
                 android:textAllCaps="true"
                 android:id="@+id/button"
                 android:layout_marginBottom="8dp"/>
@@ -57,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="twoPointsTeamA"
-                android:text="+2 Points"
+                android:text="@string/twoPoint"
                 android:textAllCaps="true"
                 android:layout_marginBottom="8dp"/>
 
@@ -65,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="freePointsTeamA"
-                android:text="Free throw"
+                android:text="@string/freePoint"
                 android:textAllCaps="true" />
 
         </LinearLayout>
@@ -74,7 +73,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="24dp"
             android:layout_marginLeft="24dp"
-            android:background="@android:color/darker_gray"/>
+            android:background="@color/colorPrimaryDark"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -86,10 +85,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Team B"
+                android:text="@string/teamBText"
                 android:layout_marginBottom="16dp"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="@color/colorTeamText"
                 android:fontFamily="sans-serif-medium"
                 android:id="@+id/textView2" />
 
@@ -99,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textSize="56sp"
-                android:textColor="@android:color/black"
+                android:textColor="@color/colorScoreText"
                 android:fontFamily="sans-serif-light"
                 android:text="0"
                 android:layout_marginBottom="24dp"/>
@@ -108,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="threePointsTeamB"
-                android:text="+3 Points"
+                android:text="@string/threePoint"
                 android:textAllCaps="true"
                 android:layout_marginBottom="8dp"/>
 
@@ -116,7 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="twoPointsTeamB"
-                android:text="+2 Points"
+                android:text="@string/twoPoint"
                 android:textAllCaps="true"
                 android:layout_marginBottom="8dp"/>
 
@@ -124,7 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="freePointsTeamB"
-                android:text="Free throw"
+                android:text="@string/freePoint"
                 android:textAllCaps="true" />
 
         </LinearLayout>
@@ -133,7 +132,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
+        android:text="@string/reset"
         android:textAllCaps="true"
         android:layout_gravity="center"
         android:layout_alignParentBottom="true"
